@@ -1,10 +1,14 @@
 import { Controller, Get } from '@overnightjs/core';
 import { Request, Response } from 'express';
 
-@Controller('User')
+@Controller('user')
 export default class User {
-    @Get("/signup")
+    @Get("signup")
     public register(_req: Request, res: Response): void {
-        res.send('ok');
+        res.send({
+            name: 'Fulano de Teste',
+            phone: '(11) 91234-5678',
+            token: 'token generated valid for 1 day',
+        });
     }
 }

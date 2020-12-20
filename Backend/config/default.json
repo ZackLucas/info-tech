@@ -1,0 +1,9 @@
+{
+  "App": {
+    "resources": {
+      "Awesome-Api": {
+        "apiUrl": "https://economia.awesomeapi.com.br/json/all/USD-BRL"
+      }
+    }
+  }
+}
